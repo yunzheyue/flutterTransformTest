@@ -126,17 +126,6 @@ class MyState extends State {
           onTap: () {
             _jumpToNativeWithValue();
           },
-
-        ),
-        GestureDetector(
-          child: SizedBox(
-            child:Align(child:  Text("获取到数据"),
-              alignment: FractionalOffset(0.0, 0.5),),
-            height: 50,
-          ),
-          onTap: () {
-          },
-
         ),
         SizedBox(
           child:Align(child:  Text("收到数据($_count)"),
