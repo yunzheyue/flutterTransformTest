@@ -14,9 +14,7 @@ class MainActivity(): FlutterActivity() {
     GeneratedPluginRegistrant.registerWith(this)
 //    进行注册flutter跳转到native
     FlutterPluginJumpToAct.registerWith(this.registrarFor(FlutterPluginJumpToAct.CHANNEL))
-
     FlutterPluginCounter.registerWith(this.registrarFor(FlutterPluginCounter.CHANNEL))
-
-    Log.e("TAG","已经注册了")
+    ThreeActivity.registerWith(this.registrarFor(ThreeActivity.CHANNEL))
   }
 }

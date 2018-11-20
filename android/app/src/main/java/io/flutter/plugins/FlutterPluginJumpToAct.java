@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 
 import com.example.flutterapp1.OneActivity;
+import com.example.flutterapp1.ThreeActivity;
 import com.example.flutterapp1.TwoActivity;
 
 import io.flutter.plugin.common.MethodCall;
@@ -54,7 +55,13 @@ public class FlutterPluginJumpToAct implements MethodChannel.MethodCallHandler {
             activity.startActivity(intent);
             //返回给flutter的参数
             result.success("success");
-        } else {
+        } else if(call.method.equals("threeAct")) {
+            //跳转到指定Activity
+            Intent intent = new Intent(activity, ThreeActivity.class);
+            activity.startActivity(intent);
+            //返回给flutter的参数
+            result.success("success");
+        } else{
             result.notImplemented();
         }
     }

@@ -4,6 +4,7 @@
     package="com.example.flutterapp1">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:icon="@mipmap/ic_launcher"
@@ -27,7 +28,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".OneActivity" />
-        <activity android:name=".TwoActivity"></activity>
+        <activity android:name=".TwoActivity" />
+        <activity android:name=".ThreeActivity"></activity>
     </application>
 
 </manifest>
