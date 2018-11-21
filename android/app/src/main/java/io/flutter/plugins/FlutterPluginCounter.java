@@ -29,13 +29,6 @@ public class FlutterPluginCounter implements EventChannel.StreamHandler {
         channel.setStreamHandler(instance);
     }
 
-    /**
-     * eventSink.success(aLong.intValue());
-     * eventSink.error("计时器异常", "异常", e.getMessage());
-     */
-
-
-
     private EventChannel.EventSink eventSink;
     private int count=0;
     private Handler handler = new Handler() {
@@ -46,7 +39,6 @@ public class FlutterPluginCounter implements EventChannel.StreamHandler {
             handler.sendEmptyMessageDelayed(1,1000);
         }
     };
-
 
     @Override
     public void onListen(Object o, final EventChannel.EventSink eventSink) {

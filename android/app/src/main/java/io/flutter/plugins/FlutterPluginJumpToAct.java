@@ -30,7 +30,6 @@ public class FlutterPluginJumpToAct implements MethodChannel.MethodCallHandler {
         //setMethodCallHandler在此通道上接收方法调用的回调
         channel.setMethodCallHandler(instance);
     }
-
     //    调用后进行方法回调
     @Override
     public void onMethodCall(MethodCall call, MethodChannel.Result result) {

@@ -12,9 +12,12 @@ class MainActivity(): FlutterActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     GeneratedPluginRegistrant.registerWith(this)
+
 //    进行注册flutter跳转到native
     FlutterPluginJumpToAct.registerWith(this.registrarFor(FlutterPluginJumpToAct.CHANNEL))
+
     FlutterPluginCounter.registerWith(this.registrarFor(FlutterPluginCounter.CHANNEL))
+
     ThreeActivity.registerWith(this.registrarFor(ThreeActivity.CHANNEL))
   }
 }

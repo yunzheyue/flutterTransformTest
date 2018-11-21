@@ -115,11 +115,13 @@ class MyState extends State {
     }
   }
 
+//  flutter向native传递数据  无参
   Future<Null> _jumpToNative() async {
     String result = await jumpPlugin.invokeMethod('oneAct');
     print("获取来自oneact的数据==============" + result);
   }
 
+//  flutter向native传递数据   带参
   Future<Null> _jumpToNativeWithValue() async {
     Map<String, String> map = {"flutter": "这是一条来自flutter的参数"};
     //这里填写的泛型参数  可以是map  也可以是jsonObject
